@@ -16,7 +16,7 @@ Analysing a circular object can be straightforward since the shape is well-defin
 
 Using SciPy, NumPy, and Astropy packages, the galaxy image will be loaded into a Jupyter Notebook. The pixels provide information about the flux in the study region. For the ellipse, I will use the form:
 
-(x - x₀)²/a² + (y - y₀)²/b² = 1
+$$ \frac{(x - x_0)^2}{a^2} + \frac{(y - y_0)^2}{b^2} = 1 $$
 
 Where:
 - `x₀` and `y₀` are coordinates for the ellipse center
@@ -26,11 +26,11 @@ For the photometric analysis, I will use concepts like:
 - Moment of inertia
 - Signal-to-Noise Ratio (SNR), defined as:
 
-S/N = Nₑ/√[Nₑ + n_pix × (Nₛ + N_D + N_R)]
+$$ \frac{S}{N} = \frac{N_{\*}}{\sqrt{N_{\*} + n_{pix} . (N_S + N_D + N_R^2)}} $$
 
 Where:
-- `Nₑ`: Counts due to the light source
-- `Nₛ`: Counts due to sky background brightness
+- `N⁎`: Counts due to the light source
+- `N_S`: Counts due to sky background brightness
 - `N_D`: Counts due to dark current ≈ 0 (corrected with Dark Frames)
 - `N_R`: Counts due to read noise ≈ 0 (corrected with Bias Frames)
 - `n_pix`: Number of pixels being counted
