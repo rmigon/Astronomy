@@ -1,6 +1,6 @@
 # Rafael Vieira Migon
 
-## Project 2 - Photometry of a Spiral Galaxy
+## Photometry of a Spiral Galaxy
 
 2024.2 Semester
 
