@@ -1,5 +1,3 @@
-# Rafael Vieira Migon
-
 ## Photometry of a Spiral Galaxy
 
 2024.2 Semester
